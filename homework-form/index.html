@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Домашняя работа формы</title>
+		<link rel="stylesheet" href="./CSS/style.css" />
+		<link
+			rel="shortcut icon"
+			href="./image/icons8-галочка-32.png"
+			type="image/png"
+		/>
+	</head>
+	<body>
+		<form>
+			<fieldset>
+				<h4>Ваши личные данные</h4>
+				<label>
+					Ваше имя
+					<input
+						class="iput-1"
+						type="text"
+						placeholder="Имя"
+						name="name"
+						required
+					/>
+				</label>
+				<label>
+					Ваш возраст
+					<input
+						class="iput-1"
+						type="number"
+						inputmode="numeric"
+						placeholder="Ваш возраст"
+						name="age"
+						required
+					/>
+				</label>
+				<label>
+					Ваш номер телефона
+					<input
+						class="iput-1"
+						type="tel"
+						inputmode="tel"
+						placeholder="Ваш номер телефона"
+						name="tel"
+						required
+					/>
+				</label>
+				<label>
+					Ваша почта
+					<input
+						class="iput-1"
+						type="email"
+						inputmode="email"
+						placeholder="Ваша почта"
+						name="email"
+						required
+					/>
+				</label>
+				<label>
+					Сообщение <span class="massage">(не обязательно)</span>
+					<textarea
+						class="iput-1"
+						name="massage"
+						placeholder="Ваше сообщение"
+					></textarea>
+				</label>
+				<label>
+					<input type="checkbox" name="first" value="first" required />
+					Я принимаю правила
+					<button class="iput-1" type="submit">Отправить</button>
+				</label>
+			</fieldset>
+		</form>
+	</body>
+</html>
