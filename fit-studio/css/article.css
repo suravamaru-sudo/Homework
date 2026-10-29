@@ -1,0 +1,72 @@
+html {
+    font-family: ubuntu, sans-serif;
+    font-weight: 400;
+}
+
+body * {
+    box-sizing: border-box;
+}
+/*Чтобы было более удобно работать с блочными моделями и, чтобы размеры высчитывались более коректно*/
+
+.container {
+    max-width: 1250px;  /*Было 1220 прибавили 30, потому что синий контент был 1190 из-за прописаного border-box. В DevTools контент равен 1220*/
+    margin: 0 auto;     /*Чтобы центрировать контейнер*/
+    padding: 0 15px;    /*Чтобы не прилипал к боку*/
+}
+
+.article {
+    padding-top: 80px;     
+    padding-top: 120px;      
+}
+
+.article-title {            /*Убрал font-weight: 600; и font-size: 48;*/
+    max-width: 596px;
+    font-family: Oswald;
+    font-weight: 600;           /*С сайта Figma базовые стили типографии*/
+    line-height: 115%;
+    text-transform: uppercase; /*Делает буквы заглавными*/
+    color: #2c332f;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.article-title-large {        /*large-большой*/     /*h1*/
+    font-size: 48px;                                /*h2*/
+}
+
+.article-title-medium {
+    font-size: 36px;
+}
+
+/*Смотрим размеры заголовков по статье, определяем где большой(h1) и где все остальные, например h2*/
+/*Есть еще article-title-small, но его здесь нет*/
+
+.article-text {             /*скопировано с Figma сайта*/
+    margin-bottom: 20px;  
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #535755;
+}
+
+.article-mb {
+    margin-bottom: 80px;
+}
+
+.article-img,
+.article-video {
+    width: 100%; /*Проценты высчитываются относительно родительских элементов*/
+}
+
+.article-list {             /*Нужен отступ класс .article-mb*/
+    margin-top: 0;
+    padding-left: 18px;
+}
+
+.article-item {
+    margin-bottom: 12px;
+}
+
+.article-video {
+    margin-bottom: 40px;
+}
