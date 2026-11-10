@@ -1,0 +1,48 @@
+html {
+	font-family: sans-serif;
+}
+
+body * {
+	box-sizing: border-box;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.container {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1320px;
+	padding: 0 15px;
+	margin: 0 auto;
+	align-items: center;
+	border-bottom: 1px solid black;
+}
+
+.header__container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.logotip {
+	font-size: 100px;
+	padding: 0;
+}
+
+.li {
+	color: red;
+	padding: 0 10px;
+	display: inline-block;
+}
+
+a {
+	color: black;
+}
+
+.none {
+	text-decoration: none;
+}
